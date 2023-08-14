@@ -31,8 +31,6 @@
   flex-direction: column;
   gap: 1.5rem;
   padding-bottom: 1.5rem;
-
-  /* max-width: 2rem; */
 }
 
 form button {
