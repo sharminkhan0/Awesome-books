@@ -1,5 +1,6 @@
+//local Storage
 const books = JSON.parse(localStorage.getItem('books')) || [];
-
+//booklist
 function updateBookList() {
   const bookList = document.getElementById('booksList');
 
@@ -12,7 +13,7 @@ function updateBookList() {
       <p>${book.title}</p> 
       <p>by ${book.author}</p>
     </div>`;
-
+  //remove
     function removeBook(index) {
       books.splice(index, 1);
       localStorage.setItem('books', JSON.stringify(books));
@@ -28,7 +29,7 @@ function updateBookList() {
     bookList.appendChild(li);
   });
 }
-
+//new book to the collection, with title and author.
 function addBook(event) {
   event.preventDefault();
 

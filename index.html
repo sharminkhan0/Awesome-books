@@ -10,21 +10,29 @@
 
 <body>
 
-    <section class="container">
-        <div class="booklet">
-            <h1>Awesome books</h1>
-            <hr>
-            <ul id="bookList"></ul>
-            <form id="bookForm">
-                <input type="text" id="title" placeholder="Title" required> <br>
-                <input type="text" id="author" placeholder="Author" required> <br>
-                <button type="submit">Add </button>
+    <header>
+        <div class="main-title"><a href="#">Awesome Books</a></div>
+    </header>
+    <main>
+        <section class="book-container">
+            <ul class="book-list"></ul>
+        </section>
+        <section class="sec-add-book">
+            <form action="add-book">
+                <label class="add-book-field">
+                    <div class="input-grp">
+                        <input type="text" name="title" id="title" required/>
+                    </div>
+                    <div>
+                        <input type="text" name="auther" id="auther" required/>
+                    </div>
+                    <button type="submit">add</button>
+                </label>
             </form>
-        </div>
-    </section>
-
-
+        </section>
+    </main>
     <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
