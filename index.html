@@ -7,32 +7,31 @@
     <link rel="stylesheet" href="style.css">
     <title>Awesome books</title>
 </head>
-
 <body>
 
-    <header>
-        <div class="main-title"><a href="#">Awesome Books</a></div>
-    </header>
-    <main>
-        <section class="book-container">
-            <ul class="book-list"></ul>
-        </section>
-        <section class="sec-add-book">
-            <form action="add-book">
-                <label class="add-book-field">
-                    <div class="input-grp">
-                        <input type="text" name="title" id="title" required/>
-                    </div>
-                    <div>
-                        <input type="text" name="auther" id="auther" required/>
-                    </div>
-                    <button type="submit">add</button>
-                </label>
-            </form>
-        </section>
-    </main>
-    <script src="index.js"></script>
-    <script src="script.js"></script>
-</body>
+    <h1>Book List</h1>
 
+    <form id="bookForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" required>
+
+      <label for="author">Author:</label>
+      <input type="text" id="author" required>
+
+      <button type="submit">Add Book</button>
+    </form>
+
+    <h2>My Books</h2>
+    <h1>Awesome Books</h1>
+    <hr>
+    <ul id="booksList"></ul>
+
+    <form id="bookForm">
+      <input type="text" placeholder="Title" id="title" required> <br>
+      <input type="text" placeholder="Author" id="author" required> <br>
+      <button type="submit">Add</button>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
 </html>
